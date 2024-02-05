@@ -1,0 +1,143 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #173f5f;
+    color: #fff;
+    
+}
+#heading{
+    text-align: center;
+    margin: 30px;
+    font-family: 'Courier New', Courier, monospace;
+   
+}
+.cover{
+    height: 85vh
+}
+.main_container{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 50%;
+}
+@media only screen and (max-width: 520px) {
+    .container{
+        width: 70%;
+    }
+  }
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#label{
+    font-weight: bold;
+    font-family: math;
+    margin: 13px;
+    font-size: 26px;
+}
+#inputval{
+    margin-top: 10px;
+    width: 50%;
+    margin-bottom: 25px;
+    padding: 8px;
+}
+.btn {
+  --b: 3px;   /* border thickness */
+  --s: .45em; /* size of the corner */
+  --color: #f6d55c;
+  
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btn:hover,
+.btn:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+
+.btn:active {
+  background: var(--color);
+  color: #fff;
+}
+
+#guesses:not(:empty){
+    background-color: #5c5c5c;
+    padding: 2px;
+}
+.part2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#newGame {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#newGame:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+#message{
+    background-color: #20639b;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+#footer{
+    position:fixed;
+  bottom:0;
+  left:0;
+  width:100%;
+  height: 20px;
+  background-color: #0e0e0e;
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+}
+#footer a{
+    color: white;
+}
+#footer a:hover{
+    color: orange;
+}
